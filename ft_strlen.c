@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-long unsigned int	ft_strlen(char *s)
+#include <stddef.h>
+
+size_t	ft_strlen(const char *s)
 {
-	long unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')
