@@ -35,7 +35,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destSize)
 	return (dest_len + src_len);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 int main()
 {
@@ -48,4 +48,4 @@ int main()
 	printf("%s\n", dest);
 	printf("%ld\n", strlcat(dest2, src2, 3));
 	printf("%s\n", dest2);
-}
+}*/
