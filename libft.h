@@ -17,10 +17,13 @@
 # include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t nb, size_t size);
 void	*ft_memset(void *p, int val, size_t nb);
 void	*ft_memcpy( void *dest, const void *src, size_t size);
+char	*ft_strdup(const char *src);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcat(char *dest, const char *src, size_t destSize);
+size_t	ft_strlcpy(char *dest, const char *src, size_t destSize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_isprint(int c);
