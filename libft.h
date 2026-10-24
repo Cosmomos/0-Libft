@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 
+void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *p, int val, size_t nb);
 void	*ft_memcpy( void *dest, const void *src, size_t size);
 size_t	ft_strlen(const char *s);
