@@ -12,4 +12,36 @@
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int ch);
+char	*ft_strrchr(const char *str, int ch)
+{
+	int	i;
+	char	*find;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	while (str[i] != ch && i >= 0)
+		i--;
+	if (str[i] == ch)
+	{
+		find = (char *) &str[i];
+		return (find);
+	}
+	return (NULL);
+}
+
+/*#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char	str[] = "Hello, I'm dumb";
+	char	*ptr;
+	char	*ptr2;
+	int		c;
+
+	c = 'm';
+	ptr = strrchr(str, c);
+	ptr2 = ft_strrchr(str, c);
+	printf("Last %c in '%s' : '%s'\n", c, str, ptr);
+	printf("Last %c in '%s' : '%s'\n", c, str, ptr2);
+}*/
