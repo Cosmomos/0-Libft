@@ -14,8 +14,8 @@
 
 char	*ft_strchr(const char *str, int ch)
 {
-	int	i;
 	char	*find;
+	int		i;
 
 	i = 0;
 	while (str[i] != ch && str[i] != '\0')
